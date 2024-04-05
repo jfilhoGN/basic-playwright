@@ -11,6 +11,6 @@ test('Realizar o login e criar uma conta', async ({ page }) => {
 
   await page.goto('https://seubarriga.wcaquino.me/addConta');
   await expect(page).toHaveTitle(/Seu Barriga - Adicionar Conta/);
-  const contaInput = await page.locator('input[id="nome"]').fill('Conta de Teste');
+  const contaInput = await page.locator('input[id="nome"]').fill('Conta de Teste 4');
   const contaButton = await page.locator('button[type="submit"]').click();
 });
